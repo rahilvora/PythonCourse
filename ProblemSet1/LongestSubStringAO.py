@@ -21,4 +21,4 @@ for i in range(len(s)):
 if flag == 0:
     preString=s[0]
 
-print ("Longest substring in alphabetical order is: " +preString)
+print ("Longest substring in alphabetical order is: ",preString)
