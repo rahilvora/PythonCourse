@@ -2,13 +2,13 @@ balance = 4145
 annualInterestRate = 0.18
 unPaid = balance
 interest = 0
-monthlyPayment=100
+monthlyPayment = 100
 
 while True:
 	for x in range(12):
-		minMonthPayment=monthlyPayment
-		balance=balance-minMonthPayment
-		if(balance<=0):
+		minMonthPayment = monthlyPayment
+		balance = balance - minMonthPayment
+		if (balance <= 0):
 			break
 		else:
 			interest = (annualInterestRate / 12) * balance
