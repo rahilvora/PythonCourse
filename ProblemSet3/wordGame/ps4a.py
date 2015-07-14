@@ -89,8 +89,7 @@ def getWordScore(word, n):
     else:
         total = total*len(word)
     return total
-         
-#print getWordScore('propers',7)
+
 #
 # Problem #2: Make sure you understand how this function works and what it does!
 #
@@ -138,7 +137,6 @@ def dealHand(n):
         hand[x] = hand.get(x, 0) + 1
         
     return hand
-#print dealHand(7)
 #
 # Problem #2: Update a hand by removing letters
 #
@@ -161,10 +159,7 @@ def updateHand(hand, word):
     for a in word:
         if a in hand and hand[a]>0:
             hand[a] = hand[a]-1        
-    return hand      
-
-#    Now the hand looks like this: {'a': 0, 'q': 0, 'u': 0, 'i': 0, 'm': 1, 'l': 1}
-#print updateHand({'h':1, 'i':1, 'c':1, 'z':1, 'm':2, 'a':1},'him')
+    return hand
 #
 # Problem #3: Test word validity
 #
@@ -191,13 +186,6 @@ def isValidWord(word, hand, wordList):
         return status
     else:
         return False
-        
-    
-    
-
-#print isValidWord('honey',{'e': 1, 'd': 1, 'h': 0, 'o': 0, 'n': 0, 'w': 1, 'y': 0},loadWords())    
-
-
 #
 # Problem #4: Playing a hand
 #
@@ -309,10 +297,6 @@ def playGame(wordList):
             break
         else:
             print 'Invalid command.'
-                      
-            
-
-
 
 #
 # Build data structures used for entire session and play game
